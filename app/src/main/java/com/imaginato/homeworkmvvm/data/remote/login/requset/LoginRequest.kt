@@ -1,0 +1,9 @@
+package com.imaginato.homeworkmvvm.data.remote.login.requset
+
+import com.google.gson.annotations.Expose
+import com.google.gson.annotations.SerializedName
+
+data class LoginRequest(
+    @SerializedName("username") @Expose var username: String? = null,
+    @SerializedName("password") @Expose var password: String? = null
+)
